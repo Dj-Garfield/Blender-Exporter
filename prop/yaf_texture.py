@@ -111,7 +111,7 @@ def register():
     Texture.distance_avg_dist_max = FloatProperty(
         update=update_preview, name="Avg Dist Max",
         description="Max distance between camera and object over which the averaged texture color will be used. Between min and max distance, a progressive blend between original texture and averaged color will be used. Dist Max cannot be smaller than Dist Min",
-        min=0, default=0.0)
+        min=0, default=100.0)
 
 
 def unregister():

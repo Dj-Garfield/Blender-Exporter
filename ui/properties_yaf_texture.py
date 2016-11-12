@@ -463,7 +463,7 @@ class YAFA_V3_TEXTURE_PT_image_sampling(YAFA_V3_TextureTypePanel, Panel):
             #row.prop(tex, "use_calculate_alpha", text="Calculate Alpha")
         layout.prop(tex, "yaf_tex_optimization")
         row = layout.row(align=True)
-        column = row.column()
+        col = row.column()
         col.prop(tex, "distance_avg_enabled")
         if tex.distance_avg_enabled:
             col.prop(tex, "distance_avg_dist_min")
